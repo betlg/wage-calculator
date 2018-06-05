@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculo Sueldo</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+<h1>Calculo de sueldo</h1>
+<div>
+<form>
+	<div class="campos">
+		<div class="izq">
+		Seleccionar categoría trabajador:<br><br>
+		Forma de pago del trabajador:<br><br>
+		¿Cumplió los objetivos?:<br><br>
+		Ingresar número de faltas:<br><br><br>
+		</div>
+		<select id="cmbCategorias"></select><br><br>
+		<select id="cmbFormaPago"></select><br><br>
+		<select id="cmbObjetivos"></select><br><br>
+		<input type="text" id="txtFaltas"><br><br>
+	</div>
+	
+	<div class="resultados">
+	<button type="button" id="btnCalcular" onclick="calcularSueldo()">Calcular Sueldo</button><br><br>
+
+		<label id="lblSueldoNeto"></label><br>
+		<label id="lblPlanilla"></label><br>
+		<label id="lblFaltas"></label><br>
+		<label id="lblBono"></label><br>
+		<label id="lblSueldoBruto"></label><br>
+	</div>
+	<script src="script.js"></script>
+</form>
+</div>
+
+</body>
+</html>
